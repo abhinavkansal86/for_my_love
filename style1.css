@@ -21,7 +21,22 @@ body {
 }
 
 .night {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  filter: blur(0.1vmin);
+  background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Darker overlay */
+        url('image.jpeg'); /* Background image */
+  background-size: cover; /* Cover the entire page */
+  /* The Magic Line: Adjust these percentages if needed */
+  /* 50% = Horizontal Center | 40% = Slightly higher than vertical center (where faces usually are) */
+  background-position: 50% 40%; 
   
+  background-repeat: no-repeat;
 }
 
 .flowers {
