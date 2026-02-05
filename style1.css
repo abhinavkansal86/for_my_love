@@ -32,8 +32,11 @@ body {
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Darker overlay */
         url('image.jpeg'); /* Background image */
   background-size: cover; /* Cover the entire page */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
+  /* The Magic Line: Adjust these percentages if needed */
+  /* 50% = Horizontal Center | 40% = Slightly higher than vertical center (where faces usually are) */
+  background-position: 50% 40%; 
+  
+  background-repeat: no-repeat;
 }
 
 .flowers {
